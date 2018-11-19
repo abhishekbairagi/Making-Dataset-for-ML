@@ -9,7 +9,7 @@ for j in range(1,3):
 	x= len(data)
 	p = 25000-x
 	for y in range(1 ,p):   
-		for i in range(0,y-1):      #adding empty elements in the array in the start
+		for i in range(0,y-1 ,p/250):      #adding empty elements in the array in the start
 			new_data[i] =y1[i]
 		for i in range(y,25000-x+y-1):
 			new_data[i] =data[i-y]
